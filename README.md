@@ -11,6 +11,11 @@ The concept is quite simple:
  * An HTML/Javascript editor. (never hurts to check your syntax.)
  * I recommend doing this *before* writing all the content in your website. You'll need to rewrite everything...
  
+# A word of caution to this tale !
+> Please note that this is a quickfix that only works on the front-end. It works well with simple websites that don't have much user input. I wouldn't recommend this method if you have an online shop with complex interactions. Also, even though it's quite simple, you're still dealing with code. It is therefore possible that your website may break! I can't be held responsible if that happens. **Proceed at your own risk!**
+
+Now that that's out of the way...
+ 
 ## Getting started, The pages structure
  1. You'll need to add a blank page that isn't linked in your navigation. Don't add anything yet, just name it "Language change" with the URL Slug ```your-site.com/language-change```
  2. Next, you add links to the secondary navigation so it appears at the bottom (you can also add them at the top if you so wish).
