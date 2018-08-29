@@ -66,7 +66,7 @@ function hide_other_languages(lang) {
   var hide_langs = ["en", "fr", "de", "it"];
   
   //remove the language we want to display from the list of languages to hide.
-  var selected_lang = indexOf(lang);
+  var selected_lang = hide_langs.indexOf(lang);
   if(selected_lang != -1){
     hide_langs.splice(selected_lang, 1);
   }else{   
