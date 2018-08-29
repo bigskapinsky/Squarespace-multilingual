@@ -152,3 +152,5 @@ In the page, add a *code block*, and add the following code:
 
 # And that's it !
 Your links should now change the language, and since it's stored in the cookie, even if you close the browser and open it again, the language stays the same.
+
+> //TODO : I still have to write some clean code to change the nav text and some dynamic text generated on the page due to said nav...
