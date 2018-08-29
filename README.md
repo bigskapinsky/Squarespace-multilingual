@@ -63,27 +63,16 @@ function get_language_from_cookie(){
 //Set your languages here
 //for this example, I used french, english, german, and italian
 function hide_other_languages(lang) {
-  var hide_langs = [];
-  switch (lang) {
-    case("fr"):
-      hide_langs = ["en", "de", "it"];
-      break;
-    case("en"):
-      hide_langs = ["fr", "de", "it"];
-      break;
-    case("de"):
-      hide_langs = ["fr", "en", "it"];
-      break;
-    case("it"):
-      hide_langs = ["fr", "en", "de"];
-      break;
-    default:
-      //display english
-      hide_other_languages(default_lang);
-      return;
+  var hide_langs = ["en", "fr", "de", "it"];
+  
+  //remove the language we want to display from the list of languages to hide.
+  var selected_lang = indexOf(lang);
+  if(selected_lang != -1){
+    hide_langs.splice(selected_lang, 1);
+  }else{   
+    //if the selected language isn't found, just hide everything except the default language.
+    hide_langs.splice(hide_langs.indexOf(default_lang));        
   }
-
-
   //prepare the css to hide unwanted languages
   var style_inner = "";
   hide_langs.forEach(function (l) {
